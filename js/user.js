@@ -1,3 +1,6 @@
+// Описание что это за класс
+
+
 let user = {
     "login": '',
     "password": '',
@@ -6,5 +9,21 @@ let user = {
             return true;
         }
         else { return false; }
+    }
+}
+
+class User {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+    validatePassword() {
+        console.log('WORK PARENT PASS');
+        if (this.password.length > 6) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
