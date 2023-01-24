@@ -1,0 +1,22 @@
+.wrap {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: rgb(253, 231, 235);
+}
+.out_1, .out_2, .out_3, .out_4, .out_5, .out_6,.out_7,.out_8 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin: 10px;
+    /* border: 1.3px solid black */
+}
+section {
+    display: flex;
+    justify-content: space-around;
+}
+.b_1, .b_2, .b_3, .b_4, .b_5, .b_6, .b_7, .b_8 {
+    margin: 10px;
+    margin-bottom: 0;
+    width: 100px;
+}
