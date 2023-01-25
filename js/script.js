@@ -176,9 +176,9 @@ class Validate {
         this.a = a;
     }
     static isNumber(num) {
-        if (num === Number) return true;
+        if (Number.isInteger(num)) return true;
 
-        return num;
+        return false;
         
     }
 }
@@ -192,4 +192,5 @@ function r(ddd) {
     return false}
 }
 console.log(r('11'));
- 
+console.log(r(11));
+
