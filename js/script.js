@@ -136,3 +136,60 @@ console.log(word._password);
 
 // Static Method
 
+class Gamer {
+    static test = true;
+    constructor(name) {
+        this.name = name;
+    }
+    static getRole(email) {
+        return 'admin';
+    }
+    static getId(email) {
+        
+    }
+    static getUser(id) {
+        return user;
+    }
+}
+
+class Student1 extends Gamer {
+    static test = false;
+    constructor(name) {
+        super();
+    }
+
+}
+
+console.log(Student1.getRole());
+
+const login = new Gamer('Ivan');
+console.log(login);
+// console.log(login.getRole());
+console.log(Gamer.getRole('Alex@gmail'));
+// console.log(Gamer.test);
+// console.log(Student1.test);
+
+// Home Work
+
+class Validate {
+        constructor(a) {
+        this.a = a;
+    }
+    static isNumber(num) {
+        if (num === Number) return true;
+
+        return num;
+        
+    }
+}
+console.log(Validate.isNumber('adfjhaciuoh'));
+console.log(Validate.isNumber(12));
+
+
+function r(ddd) {
+    if (Number.isInteger(ddd)) { return true; }
+    else {
+    return false}
+}
+console.log(r('11'));
+ 
