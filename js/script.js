@@ -114,3 +114,25 @@ class User4 extends User3 { };
 const man2 = new User4();
 man2.name = 'Oleg';
 man2.one();
+
+class Test{
+    constructor() {
+        
+    }
+    set password(password) {
+        this._password = password.trim();
+        console.log(this.password);
+    }
+    get password() {
+        return this._password;
+    }
+}
+const word = new Test();
+word.password = '22woijswf';
+console.log(word);
+console.log(word._password);
+
+
+
+// Static Method
+
