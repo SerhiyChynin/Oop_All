@@ -77,3 +77,40 @@ class List {
 const item = new List(['one', 'two', 'three', 'four'])
 // console.log(item);
 console.log(item.render());
+
+
+// Get Set
+
+class User3 {
+    constructor() {
+    }
+    #test = 'hohoho';
+    #url = 'http://backend.ex';
+    send() {
+        
+    }
+    set name(name) {
+        console.log('private: ' + this.#test);
+        this._name = name.trim().toLowerCase();
+    }
+    get name() {
+        return this._name
+    }
+    one() {
+        console.log('private: ' + this.#test);
+        
+    }
+}
+
+const man = new User3();
+// man._name = 'Kola';    //_ нижнее подчеркивание обозначает защищенное свойство
+// man.setNameOnThisClass(' Daddy');
+man.name = '  dddelaaEEE'
+console.log(man);
+console.log(man.name);
+console.log(man);
+
+class User4 extends User3 { };
+const man2 = new User4();
+man2.name = 'Oleg';
+man2.one();
