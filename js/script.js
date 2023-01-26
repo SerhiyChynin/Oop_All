@@ -181,9 +181,20 @@ class Validate {
         return false;
         
     }
+
+    static isInit(a) {
+         if (Number.isInteger(a)) return true;
+
+        return false;
+        
+         
+        
+    }
 }
-console.log(Validate.isNumber('adfjhaciuoh'));
-console.log(Validate.isNumber(12));
+// console.log(Validate.isNumber('adfjhaciuoh'));
+// console.log(Validate.isNumber(12));
+
+console.log(Validate.isInit(4.5));
 
 
 function r(ddd) {
@@ -191,6 +202,8 @@ function r(ddd) {
     else {
     return false}
 }
-console.log(r('11'));
-console.log(r(11));
+// console.log(r('11'));
+// console.log(r(11));
+
+
 
